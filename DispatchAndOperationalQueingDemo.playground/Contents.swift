@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 //===================Main and Global Queues===================
 
@@ -80,3 +81,93 @@ DispatchQueue.global().async {
 //
 //    print ("============= End OF Que D =============")
 //}
+
+
+
+
+// Array implementation of Enqueue and Dequeue
+//class Queue<T>{ // T to make array generic
+//    var arr = [T]()
+//
+//    func enQueue(val: T){
+//        arr.append(val)
+//    }
+//
+//    func deQueue() -> T? {
+//        if arr.isEmpty {
+//            return nil
+//        }else{
+//            return arr.remove(at: 0)
+//        }
+//    }
+//}
+//
+//var queue = Queue<String>()
+//queue.enQueue(val:"Hi")
+//queue.enQueue(val:"We")
+//queue.enQueue(val:"Are")
+//queue.enQueue(val:"Team")
+//queue.enQueue(val:"7")
+//queue.deQueue()
+//queue.deQueue()
+//
+//
+//// Main
+//let mainQueue = OperationQueue.main
+//
+//mainQueue.addOperation {
+//    <#code#>
+//}
+//
+//mainQueue.addOperation(<#T##op: Operation##Operation#>)
+//
+//// Operations
+//// 1st block operation
+//let Operation = BlockOperation() // https://developer.apple.com/documentation/foundation/operation Do not use it directly
+//
+//Operation.addExecutionBlock {
+//    debugPrint("1")
+//}
+//Operation.addExecutionBlock {
+//    debugPrint("2")
+//}
+//Operation.addExecutionBlock {
+//    debugPrint("3")
+//}
+//
+//
+//
+//
+//// Custom
+//let customQueue = OperationQueue()
+//customQueue.maxConcurrentOperationCount = 5 // Set max number of concurrent functions
+//
+//
+//
+//
+//// Dependies
+//
+//func testDependies(){
+//
+//    let operationOne = BlockOperation()
+//    operationOne.addExecutionBlock {
+//        debugPrint("Operation one")
+//    }
+//
+//    let operationTwo = BlockOperation()
+//    operationTwo.addExecutionBlock {
+//        debugPrint("Operation two")
+//    }
+//
+//    operationTwo.addDependency(operationOne)
+//
+//    let operationQueue = OperationQueue()
+//    operationQueue.addOperation(operationOne)
+//    operationQueue.addOperation(operationTwo)
+//}
+//
+//testDependies()
+
+
+
+
