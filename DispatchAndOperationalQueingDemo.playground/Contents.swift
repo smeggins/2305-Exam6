@@ -3,7 +3,7 @@ import UIKit
 //===================Main and Global Queues===================
 
 
-// you don't want too call this sync or it will freeze the main thread
+ you don't want too call this sync or it will freeze the main thread
 DispatchQueue.main.async {
     print("executing on a main que thread: ", Thread.current)
 }
@@ -20,8 +20,8 @@ DispatchQueue.global().async {
 //===================Custom Queues===================
 
 
-// label is used for error handling and trouble shooting
-// attributes can be used to determine if work batches can be executed concurrently or not
+//// label is used for error handling and trouble shooting
+//// attributes can be used to determine if work batches can be executed concurrently or not
 //let que = DispatchQueue(label: "Demo.DispatchQue.demoQue", attributes: .concurrent)
 //
 //// prints the given string 10 thousand times
@@ -69,7 +69,7 @@ DispatchQueue.global().async {
 //===================Quality Of Service===================
 
 
-// remove the qos and D will appear less often during other threads because it is set to background priority
+//// remove the qos and D will appear less often during other threads because it is set to background priority
 //let que2 = DispatchQueue(label: "Demo.DispatchQue.demoQue2",qos: .background, attributes: .concurrent)
 //
 //que2.async {
