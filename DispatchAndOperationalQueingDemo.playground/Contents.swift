@@ -4,7 +4,7 @@ import Foundation
 //===================Main and Global Queues===================
 
 
- you don't want too call this sync or it will freeze the main thread
+ //you don't want too call this sync or it will freeze the main thread
 DispatchQueue.main.async {
     print("executing on a main que thread: ", Thread.current)
 }
@@ -101,16 +101,25 @@ DispatchQueue.global().async {
 //            return arr.remove(at: 0)
 //        }
 //    }
+//    func print(){
+//        for arr in arr {
+//            debugPrint(arr)
+//        }
+//    }
 //}
 //
 //var queue = Queue<String>()
+//
 //queue.enQueue(val:"Hi")
 //queue.enQueue(val:"We")
 //queue.enQueue(val:"Are")
 //queue.enQueue(val:"Team")
 //queue.enQueue(val:"7")
+//
 //queue.deQueue()
 //queue.deQueue()
+//
+//queue.print()
 //
 //
 //// Main
